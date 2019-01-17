@@ -33,7 +33,7 @@
 <tbody>
 <tr>
 	<td width="250">
-		<img src="https://www.webmoney.ru/img/icons/wmlogo_flat_48.png">
+		<img src="https://www.webmoney.ru/img/icons/wmlogo_vector_blue.png">
 	</td>
 	<td>
 		R314489779320<br>Z084070737467<br>E701345586047<br>

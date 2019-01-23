@@ -12,6 +12,12 @@ return array(
         'description'  => 'Секретный ключ',
         'control_type' => 'input',
     ),
+    'TESTMODE'        => array(
+        'value'        => '',
+        'title'        => 'Тестовый режим',
+        'description'  => '',
+        'control_type' => 'checkbox',
+    ),
     'feedback' => array(
         'title' => 'Техническая поддержка',
         'description' => 'Перейдите по ссылке чтобы связаться с разработчиком',

@@ -144,6 +144,11 @@ class paycomPayment extends waPayment implements waIPayment
      * @throws waException
      */
     private function initRequest() {
+        /*
+         * todo: На некоторых конфигурациях не удается получить merchant_id вебасиста.
+         * todo: Из-за этого плагин не может считать secret_key платежной системы и не проходит авторизация
+         */
+
         $this->request  = new Request();
 
         if ($this->merchant_id && $this->order_id && $this->app_id) {
@@ -193,7 +198,7 @@ class paycomPayment extends waPayment implements waIPayment
     {
         $request = (array)json_decode(file_get_contents('php://input'), true);
 
-        waLog::dump($request, 'test-req.log');
+        //waLog::dump($request, 'test-req.log');
 
         $this->initRequest();
         $this->config   = $this->getConfig();
